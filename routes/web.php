@@ -1,5 +1,12 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FeaturesController;
+use App\Http\Controllers\RandomParksController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ParkController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +20,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index']);
+
+Route::get('/about', [AboutController::class, 'index']);
+
+Route::get('/contact', [ContactController::class, 'index']);
+
+Route::get('/features', [FeaturesController::class, 'index']);
+
+Route::get('/random-parks', [RandomParksController::class, 'index']);
+
+Route::get('/park', [ParkController::class, 'index']);
