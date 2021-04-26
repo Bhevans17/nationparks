@@ -3,18 +3,18 @@
 <!-- portfolio -->
 <section class="portfolio-flyer py-5" id="gallery">
     <div class="container pt-lg-3 pb-md-5">
-        <h3 class="title  text-center my-lg-5 my-3">Random Parks</h3>
-        <input type="text" class='form-control' placeholder='Search Parks'>
-        <div class="row news-grids pb-lg-5 mt-3 mt-lg-5">
+        <h3 class="title  text-center my-lg-5 my-3">Parks</h3>
+        <input id='search-parks' type="text" class='form-control' placeholder='Search Parks'>
+        <div id="card-wrapper" class="row news-grids pb-lg-5 mt-3 mt-lg-5">
             <!-- Loop over random park data -->
             @foreach($parks as $park)
-            <div class="col-lg-4 gal-img">
+            <div id="f-card" class="col-lg-4 gal-img">
                 <div class="gal-info">
-                    <a href="#gal1"><img style="max-height: 200px; width: 100vw; background-size: cover;"
+                    <a href="#gal1"><img style="height: 30vh; width: 100vw; background-size: cover !important;"
                             src="{{ $park['images'][0]['url'] }}" alt="news image" class="img-fluid"></a>
                     <div class="property-info-list">
                         <div class="detail">
-                            <h4>
+                            <h4 id='park-title'>
                                 {{ $park['name'] }}
                             </h4>
                             <h6 class="text-secondary">{{ $park['designation'] }}</h6>

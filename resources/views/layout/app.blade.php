@@ -61,22 +61,7 @@ Author URL: http://w3layouts.com
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
                         <li class="active"><a href="/">Home</a></li>
-                        <li><a href="/random-parks">Random Parks</a></li>
-                        <li class="dropdown">
-                            <!-- First Tier Drop Down -->
-                            <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down"
-                                    aria-hidden="true"></span> </label>
-                            <a href="#">More Info <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <input type="checkbox" id="drop-2" />
-                            <ul>
-                                <li><a href="/features">Features</a>
-                                </li>
-                                <li><a href="/gallery">Gallery</a>
-                                </li>
-                                <li><a href="/features">Services</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a href="/random-parks">Parks</a></li>
                         <li><a href="/contact">Contact</a>
                         </li>
                     </ul>
@@ -145,7 +130,8 @@ Author URL: http://w3layouts.com
             </div>
         </div>
         <!-- //copyright -->
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
         <script src='js/app.js'></script>
 </body>
