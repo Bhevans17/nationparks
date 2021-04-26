@@ -24,7 +24,8 @@ Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/about', [AboutController::class, 'index']);
 
-Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'create']);
+Route::post('/contact', [ContactController::class, 'store']);
 
 Route::get('/features', [FeaturesController::class, 'index']);
 

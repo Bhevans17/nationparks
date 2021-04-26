@@ -25,9 +25,10 @@
 <section class="portfolio-flyer py-5" id="gallery">
     <div class="container pt-lg-3 pb-md-5">
         <div class="row">
-            <div id='map' style='width: 400px; height: 300px;'></div>
+            <h3 class="title text-center my-lg-5 my-3">Near You</h3>
+            <div id='map' style='width: 100vw; height: 70vh;;'></div>
         </div>
-        <h3 class="tittle  text-center my-lg-5 my-3">Our Recent Tours</h3>
+        <h3 class="title my-lg-5 my-3">Featured</h3>
         <div class="row news-grids pb-lg-5 mt-3 mt-lg-5">
             <div class="col-lg-4 gal-img">
                 <div class="gal-info">
